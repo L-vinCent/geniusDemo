@@ -123,7 +123,7 @@ static const char mailLinkKey;
     objc_setAssociatedObject(self ,&textKey ,text ,OBJC_ASSOCIATION_COPY);
     //匹配表情
     NSMutableArray *emotionResults = [self regexEmotion:text];
-    //表情结果集排序
+    //表情结果集排序-----------789789879
     [emotionResults sortUsingComparator:^NSComparisonResult(MYSubCoretextResult *_Nonnull result1, MYSubCoretextResult  *_Nonnull result2) {
         
         return result1.range.location > result2.range.location;
